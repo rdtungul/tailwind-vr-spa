@@ -8,7 +8,12 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Josefin Sans", "sans-serif"],
+        alata: ["Alata"],
+      },
+    },
   },
   plugins: [],
 };
