@@ -297,5 +297,114 @@
         </div>
       </div>
     </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-black">
+      <!-- FOOTER CONTAINER -->
+      <div class="container max-w-6xl py-10 mx-auto">
+        <!-- FOOTER FLEX CONTAINER -->
+        <div
+          class="mb-8 space-y-6 align-items-center md:flex-row md:space-y-0 md:justify-between md:items-start"
+        >
+          <!-- Menu & Logo Container -->
+          <div class="space-y-8 align-items-center md:items-start md:space-y-4">
+            <!-- Logo -->
+            <img src="images/logo.svg" alt="" class="w-44 md:ml-3" />
+          </div>
+
+          <!-- Menu Container -->
+          <div
+            class="space-y-4 font-bold text-white align-items-center md:flex-row md:space-y-0 md:space-x-6 md:ml-3"
+          >
+            <!-- Item 1 -->
+            <div class="h-10 group">
+              <a href="#">About</a>
+              <div class="footer-link-hover"></div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="h-10 group">
+              <a href="#">Careers</a>
+              <div class="footer-link-hover"></div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="h-10 group">
+              <a href="#">Events</a>
+              <div class="footer-link-hover"></div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="h-10 group">
+              <a href="#">Products</a>
+              <div class="footer-link-hover"></div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="h-10 group">
+              <a href="#">Support</a>
+              <div class="footer-link-hover"></div>
+            </div>
+          </div>
+
+          <!-- Social & Copy Container -->
+          <div
+            class="flex flex-col items-start justify-between space-y-4 text-gray-500"
+          >
+            <!-- Icons Container -->
+            <div
+              class="flex items-center justify-center mx-auto space-x-4 md:justify-end md:mr-0"
+            >
+              <!-- Icon 1 -->
+              <div class="h-8 group">
+                <a href="#">
+                  <img src="images/icon-instagram.svg" alt="" class="h-6" />
+                </a>
+              </div>
+
+              <!-- Icon 2 -->
+              <div class="h-8 group">
+                <a href="#">
+                  <img src="images/icon-facebook.svg" alt="" class="h-6" />
+                </a>
+              </div>
+
+              <!-- Icon 3 -->
+              <div class="h-8 group">
+                <a href="#">
+                  <img src="images/icon-pinterest.svg" alt="" class="h-6" />
+                </a>
+              </div>
+
+              <!-- Icon 4 -->
+              <div class="h-8 group">
+                <a href="#">
+                  <img src="images/icon-twitter.svg" alt="" class="h-6" />
+                </a>
+              </div>
+            </div>
+
+            <!-- Copy -->
+            <div class="font-bold">
+              &copy; <span class="auto-year"></span>.
+              <a
+                href=""
+                class="mx-2 hover:border-b hover:text-blue-50 hover:border-blue-50"
+                target="_blank"
+                >rosephdarl</a
+              >
+              - Web Developer | Instructor
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // automatically updated calendar year.
+      const year = new Date().getFullYear();
+      document.getElementsByClassName("auto-year")[0].textContent = year;
+      // console.log(year);
+    </script>
   </body>
 </html>
