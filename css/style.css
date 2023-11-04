@@ -687,8 +687,20 @@ h5 {
   inset: -0.25rem;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .end-1 {
   inset-inline-end: 0.25rem;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .top-48 {
@@ -891,6 +903,10 @@ h5 {
 
 .h-8 {
   height: 2rem;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-44 {
@@ -1435,6 +1451,12 @@ h5 {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -2011,6 +2033,11 @@ h5 {
   padding-right: 1.5rem;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -2021,8 +2048,16 @@ h5 {
   padding-bottom: 3rem;
 }
 
+.pl-12 {
+  padding-left: 3rem;
+}
+
 .pr-0 {
   padding-right: 0px;
+}
+
+.pt-40 {
+  padding-top: 10rem;
 }
 
 .text-left {
@@ -2094,12 +2129,13 @@ h5 {
   line-height: 2.5rem;
 }
 
-.font-bold {
-  font-weight: 700;
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
-.font-medium {
-  font-weight: 500;
+.font-bold {
+  font-weight: 700;
 }
 
 .uppercase {
@@ -2629,9 +2665,9 @@ h5 {
   position: relative;
 }
 
-span.hamburger-top,
-span.hamburger-middle,
-span.hamburger-bottom {
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
   position: absolute;
   width: 24px;
   height: 2px;
@@ -2640,12 +2676,30 @@ span.hamburger-bottom {
   background: #fff;
 }
 
-span.hamburger-middle {
+.hamburger-middle {
   transform: translateY(7px);
 }
 
-span.hamburger-bottom {
+.hamburger-bottom {
   transform: translateY(14px);
+}
+
+/* ==== Click Open Menu Styles*/
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
 
 @media (min-width: 480px) {
@@ -2694,6 +2748,11 @@ span.hamburger-bottom {
 .hover\:text-blue-50:hover {
   --tw-text-opacity: 1;
   color: rgb(239 246 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-pink-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(236 72 153 / var(--tw-text-opacity));
 }
 
 .before\:hover\:text-center:hover::before {
